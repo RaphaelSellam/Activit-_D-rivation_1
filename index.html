@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activité d'introduction à la notion de nombre dérivé</title>
+
+    <!-- Reveal.js styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .reveal h2 {
+            color: #1a1a1a;
+            font-size: 1.5em;
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 90%;
+            margin: 0 auto;
+            font-size: 0.8em;
+            line-height: 1.2;
+            color: #333;
+            overflow-y: auto;
+            max-height: 75vh;
+        }
+
+        .slide-image {
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: #333;
+            text-align: justify;
+        }
+
+        .question ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .question li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1 : Titre -->
+            <section>
+                <h2>Activité d'introduction à la notion de nombre dérivé</h2>
+            </section>
+
+            <!-- Slide 2 : Graphique 1 et Texte -->
+            <section>
+                <div class="slide-content">
+                    <h2>Graphique 1</h2>
+                    <img class="slide-image" src="https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Graphique1.png?raw=true" alt="Graphique 1">
+                    <p class="content">Le graphique au-dessus est issu d’un carnet de santé, il montre des courbes de croissance de la taille des filles de 1 mois à 3 ans. On considère dans la suite la courbe centrale qui correspond à la croissance médiane (en chaque point, 50 % des filles ont une taille plus grande et 50 % une taille plus petite).</p>
+                    <p class="content"><strong>Source :</strong> <a href="https://solidarites-sante.gouv.fr/IMG/pdf/carnet_de_sante-num-.pdf" target="_blank">Lien vers le graphique</a></p>
+                </div>
+            </section>
+
+            <!-- Slide 3 : Graphique 2 avec la Partie 1 -->
+            <section>
+                <div class="slide-content">
+                    <h2>Graphique 2</h2>
+                    <p class="content"><strong><em>On considère la courbe médiane représentée ci-dessous.</em></strong></p>
+                    <img class="slide-image" src="https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Graphique2.png?raw=true" alt="Graphique 2">
+                    <p class="content">
+                        <strong>Partie 1 : Zoom sur la courbe</strong><br>
+                        Ouvrez l’activité GeoGebra via ce <a href="https://www.geogebra.org/m/v9rsqxyn" target="_blank">lien</a>.
+                    </p>
+                    <ul class="content">
+                        <li>1. Déplacez le point A où vous voulez sur la courbe.</li>
+                        <li>2. Zoomez sur la courbe avec le bouton Toolbar Image.</li>
+                        <li>3. Revenez au cadrage initial, recommencez avec une autre position du point A.</li>
+                    </ul>
+                    <p class="content"><strong>Que remarquez-vous ?</strong></p>
+                </div>
+            </section>
+
+            <!-- Slide 4 : Graphique 3 avec la Partie 2 -->
+            <section>
+                <div class="slide-content">
+                    <h2>Partie 2 : Entre 1 et 28 mois</h2>
+                    <p class="content">Ouvrez l’activité GeoGebra <a href="https://www.geogebra.org/m/umdpscqe" target="_blank">ici</a>.</p>
+                    <p class="content"><strong><em>Taille médiane des filles de 1 à 3 mois</em></strong></p>
+                    <img class="slide-image" src="https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Graphique3.png?raw=true" alt="Graphique 3">
+                    <p class="content">
+                        Dans cette partie, on considère le <strong>Graphique 3</strong>.
+                        La taille médiane à 1 mois est l’ordonnée du point <strong>A</strong> de la courbe d’abscisse 1
+                        et la taille médiane à 28 mois est celle du point <strong>M</strong> d’abscisse 28.
+                    </p>
+                    <ul class="content">
+                        <li>1. Entre 1 an et 28 mois, de combien de cm cette fille a-t-elle grandi ?</li>
+                        <li>2. Quel est le coefficient directeur (ou pente) de la sécante (AM) à la courbe ?</li>
+                        <li>3. Quelle serait l’unité de ce coefficient directeur ?</li>
+                        <li>4. Que représente ce coefficient directeur en termes de vitesse de croissance ?</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 5 : Partie 3 à l'âge de 1 mois -->
+            <section>
+                <div class="slide-content">
+                    <h2>Partie 3 : à l'âge de 1 mois</h2>
+                    <p class="content">
+                        À 24 mois, la taille médiane d’une fille est de 86,7 cm.<br>
+                        À 1 mois, la taille médiane d’une fille est de 53 cm.
+                    </p>
+                    <ul class="content">
+                        <li>1. Quelle a été la vitesse moyenne de croissance de cette jeune fille entre 1 mois et 24 mois ?</li>
+                        <li>2. Recopiez et complétez le tableau ci-dessous :</li>
+                    </ul>
+                    <img class="slide-image" src="https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Tableau1.png?raw=true" alt="Tableau 1">
+                    <ul class="content">
+                        <li>3. À l'âge de 1 mois, quelle est la vitesse de croissance de cette fille ? Comment le savoir ? Proposez une méthode.</li>
+                        <li>4. Comment tracer la droite passant par le point A(1,53) et de coefficient directeur la <em>vitesse instantanée</em> de croissance de la taille à l’âge de 1 mois estimée à la question précédente ? Cette droite est la <em>tangente</em> à la courbe au point A. Déterminez une équation de cette tangente.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 6 : Partie 4 - Vitesse instantanée -->
+            <section>
+                <div class="slide-content">
+                    <h2>Partie 4 : vitesse instantanée</h2>
+                    <p class="content">Ouvrez l’activité GeoGebra <a href="https://www.geogebra.org/m/xht3pru8" target="_blank">ici</a></p>
+                    <p class="content">1. Effectuez plusieurs fois la séquence suivante :</p>
+                    <ul class="content">
+                        <li><em>Choisissez un point A ;</em></li>
+                        <li><em>Tracez la tangente et la sécante (AM) ;</em></li>
+                        <li><em>Déplacez M pour le faire se rapprocher de A ;</em></li>
+                        <li><em>Comparez les équations de ces deux droites ;</em></li>
+                        <li><em>Recommencez au premier point avec une autre position du point A.</em></li>
+                    </ul>
+                    <p class="content">Complétez le tableau suivant :</p>
+                    <img class="slide-image" src="https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Tableau2.png?raw=true" alt="Tableau 2">
+                </div>
+            </section>
+
+            <!-- Slide 7 : Partie 5 - Tangente et approximation locale -->
+            <section>
+                <div class="slide-content">
+                    <h2>Partie 5 : tangente et approximation locale</h2>
+                    <p class="content"><strong>1. Approximation locale.</strong></p>
+                    <p class="content">
+                        Ouvrez l’activité GeoGebra <a href="https://www.geogebra.org/m/btx5btdu" target="_blank">ici</a> 
+                    </p>
+                    <p class="content">
+                        En cliquant sur le bouton avec la loupe Toolbar Image, on peut zoomer autour d’un point A avec un facteur 2 à chaque fois. Faire des essais avec plusieurs positions du point A. Si on effectue un zoom assez important, qu’observe-t-on entre la courbe et la tangente ?
+                    </p>
+                    <p class="content"><strong>2. Extrapolation :</strong></p>
+                    <ul class="content">
+                        <li>a. Quelle est la vitesse instantanée de croissance en cm/mois à l’âge d’un an ?</li>
+                        <li>b. Quelle taille mesurerait une fille à l’âge de 12 ans si sa croissance gardait la même vitesse à partir de l’âge d’un an ?</li>
+                        <li>c. Comment serait la courbe de taille en fonction de l’âge si la vitesse instantanée de croissance de la taille était constante ?</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts for Reveal.js -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.min.js"></script>
+
+    <script>
+        // Initialisation de Reveal.js
+        Reveal.initialize({
+            progress: true,
+            slideNumber: true,
+            controls: true,
+            autoSlide: 120000, // Temps pour chaque slide : 2 minutes
+            autoSlideStoppable: true
+        });
+    </script>
+</body>
+
+</html>
